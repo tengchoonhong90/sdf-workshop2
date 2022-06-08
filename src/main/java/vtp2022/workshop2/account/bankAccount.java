@@ -1,4 +1,4 @@
-package vtp2022;
+package vtp2022.workshop2.account;
 
 import java.time.LocalDateTime;
 import java.util.LinkedList;
@@ -114,7 +114,7 @@ public class bankAccount {
             System.err.print(e);
             throw new IllegalArgumentException("Invalid withdraw amount");
         }
-        return withdrawAmtF.floatValue();
+        return this.balance;
     }
     
     public void deposit(String depositAmt){
